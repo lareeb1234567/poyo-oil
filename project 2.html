@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-success" data-target="#m1" data-toggle="modal">Register</button>
+        <div class="modal" id="m1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="text-center text-primary"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            Registration form</h2>
+                        <form action="" class="">
+                            <label for="">User Name</label>
+                            <input type="text" name="" class="form-control" id="">
+                            <label for="">Email</label>
+                            <input type="Email" name="" class="form-control" id="">
+                            <label for="">Date Of Birth</label>
+                            <input type="Date" name="" class="form-control" id="">
+                            <label for="">Password</label>
+                            <input type="Password" name="" class="form-control" id="p">
+                            <label for="">Confirm Password</label>
+                            <input type="Password" name="" class="form-control" id="cp">
+                            <input type="checkbox" onclick="xyz()">Show password
+                            <br><br>
+                            <label for="">Feedback</label>
+                            <textarea name="" id="" cols="30" class="form-control" rows="6"></textarea>
+                            <input type="Submit" value="Signup" class="btn btn-primary mt-3 btn-block">
+                        </form>
+                    </div>
+                    <div class="modal-body">Already Have An Account?<a href="">Login</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function xyz()
+        {
+           let pass= document.getElementById("p");
+            let cpass= document.getElementById("cp");
+           if(pass.type=='password' && cpass.type=='password')
+           {
+            pass.type='text';
+            cpass.type='text';
+           }
+           else
+           {
+             pass.type='password'
+              cpass.type='password'
+           }
+        }
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
